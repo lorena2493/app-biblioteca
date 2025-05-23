@@ -38,21 +38,21 @@ def main(page: ft.Page):
 
     input_endereco = ft.TextField(label='Endereço:', hint_text='EX: Rua da alegria, 123')
 
-    input_marca = ft.TextField(label='Endereço:', hint_text='EX: Rua da alegria, 123')
+    input_marca = ft.TextField(label='Marca:', hint_text='EX: Ford')
 
-    input_modelo = ft.TextField(label='Endereço:', hint_text='EX: Rua da alegria, 123')
+    input_modelo = ft.TextField(label='Modelo:', hint_text='EX: Fusca')
 
-    input_placa = ft.TextField(label='Endereço:', hint_text='EX: Rua da alegria, 123')
+    input_placa = ft.TextField(label='Placa:', hint_text='EX: A1B23C')
 
-    input_ano_fabricacao = ft.TextField(label='Endereço:', hint_text='EX: Rua da alegria, 123')
+    input_ano_fabricacao = ft.TextField(label='Ano de fabricação:', hint_text='EX: 2007')
 
-    input_data_abertura = ft.TextField(label='Endereço:', hint_text='EX: Rua da alegria, 123')
+    input_data_abertura = ft.TextField(label='Data da abertura:', hint_text='EX: 04-10-2024')
 
-    input_descricao_servico = ft.TextField(label='Endereço:', hint_text='EX: Rua da alegria, 123')
+    input_descricao_servico = ft.TextField(label='Descrição do serviço:', hint_text='EX: Troca de óleo')
 
-    input_status = ft.TextField(label='Endereço:', hint_text='EX: Rua da alegria, 123')
+    input_status = ft.TextField(label='Status:', hint_text='EX: Completo')
 
-    input_valor_estimado = ft.TextField(label='Endereço:', hint_text='EX: Rua da alegria, 123')
+    input_valor_estimado = ft.TextField(label='Valor estimado:', hint_text='EX: 1400')
 
     msg_sucesso = ft.SnackBar(
         content=ft.Text("Salvo com sucesso"),
