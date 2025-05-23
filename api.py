@@ -1,28 +1,31 @@
 import requests
 
 def consultar_cliente():
-    url = f"http://127.0.0.1:5000/{id}"
+    url = "http://127.0.0.1:5000/clientes"
     response_get = requests.get(url)
     if response_get.status_code == 200:
-        dados_get_postagem = response_get.json()
-        print(f"\n titulo: {dados_get_postagem['title']}")
-        print(f"\n conteudo: {dados_get_postagem['body']}")
+        dados_get_clientes = response_get.json()
+        print(f"\n id: {dados_get_clientes['id']}")
+        print(f"\n nome: {dados_get_clientes['nome']}")
+        print(f"\n cpf: {dados_get_clientes['cpf']}")
+        print(f"\n telefone: {dados_get_clientes['telefone']}")
+        print(f"\n endereco: {dados_get_clientes['endereco']}")
     else:
         print(f"Erro: {response_get.status_code}")
 
 
-# exemplo_get(10)
+consultar_cliente()
 
 def inserir_cliente():
-    url = "https://jsonplaceholder.typicode.com/posts"
+    url = "http://127.0.0.1:5000/criar_cliente"
 
     novo_cliente = {
-        "title": "Novo titulo",
+        "nome": "",
         "body": "Nova postagem",
         "userId": 2
     }
 
-    response = requests.post(url, json=nova_postagem)
+    response = requests.post(url, json=novo_cliente)
 
     if response.status_code == 201:
         dados_post = response.json()
